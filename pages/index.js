@@ -3,15 +3,12 @@
  * Pages - index
  * -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
  */
-import Link from 'next/link';
+import Layout from '../components/Layout';
 
 const Index = () => (
-  <div>
-    <Link href="/about" style={{ fontSize: 20 }}>
-      <button>Go to About Page</button>
-    </Link>
+  <Layout>
     <p>Hello next.js</p>
-  </div>
+  </Layout>
 );
 
 export default Index;
