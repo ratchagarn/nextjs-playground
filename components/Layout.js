@@ -39,9 +39,11 @@ export default function Layout(props) {
           height: 100%;
           padding-left: 20px;
           padding-right: 20px;
+          padding-bottom: 100px;
           min-width: 320px;
           margin-left: auto;
           margin-right: auto;
+          background-color: white;
         }
       `}</style>
     </div>

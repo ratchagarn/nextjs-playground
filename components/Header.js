@@ -8,6 +8,7 @@ import Link from 'next/link';
 export default function Header() {
   return (
     <header>
+      <h1>Next.js Playground</h1>
       <Link href="/">
         <a>Home</a>
       </Link>
@@ -20,6 +21,10 @@ export default function Header() {
           margin-bottom: 10px;
           padding: 20px;
           border-bottom: 2px solid #999;
+        }
+
+        h1 {
+          margin: 0 0 1em 0;
         }
 
         a {

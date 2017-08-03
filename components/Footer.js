@@ -12,10 +12,15 @@ export default function Footer() {
 
       <style jsx>{`
         footer {
-          margin-top: 50px;
-          padding: 50px 0;
+          position: fixed;
+          left: 0;
+          bottom: 0;
+          z-index: 1;
+          width: 100%;
+          padding: 40px 0;
+          background-color: white;
           text-align: center;
-          background-color: #F6F6F6;
+          box-shadow: -2px 0 5px rgba(0, 0, 0, .2);
         }
       `}</style>
     </footer>

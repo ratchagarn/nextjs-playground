@@ -22,7 +22,7 @@ export default function Post({ show }) {
 
   return (
     <Layout>
-      <h1>{name}</h1>
+      <h2>{name}</h2>
       <p><img src={image.medium} alt="" /></p>
       <p>{summary.replace(/<[/]?p>/g, '')}</p>
 
