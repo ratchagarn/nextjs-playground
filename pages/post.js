@@ -3,8 +3,8 @@
  * Page - post
  * -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
  */
-
-import Layout from '../components/Layout.js'
+import Layout from '../components/Layout.js';
+import fetch from 'isomorphic-unfetch';
 
 export default function Post(props) {
   return (
