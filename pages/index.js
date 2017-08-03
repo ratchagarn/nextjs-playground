@@ -10,7 +10,7 @@ import fetch from 'isomorphic-unfetch';
 
 export default function Index(props) {
   const showList = props.show.map(({ show }) => {
-    return <ShowListItem data={show} />
+    return <ShowListItem key={show.id} data={show} />
   });
 
   return (
@@ -61,6 +61,7 @@ function ShowListItem({ data }) {
         .ShowListItem .showImage {
           display: block;
           width: 100%;
+          background-color: #CCC;
         }
 
         .ShowListItemBody > .col {
@@ -116,7 +117,6 @@ function ShowContent({ data }) {
       </Link>
       <p><strong>Status:</strong> {data.status}</p>
       <p><strong>Runtime:</strong> {data.runtime}</p>
-      <p><strong>Premiered:</strong> {data.premiered}</p>
 
       <style jsx>{`
         .ShowContent a {
