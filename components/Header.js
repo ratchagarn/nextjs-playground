@@ -17,11 +17,19 @@ export default function Header() {
 
       <style jsx>{`
         header {
-          padding: 10px;
+          margin-bottom: 10px;
+          padding: 20px;
+          border-bottom: 2px solid #999;
         }
 
-        header a {
+        a {
+          color: blue;
           margin-right: 15px;
+          font-weight: bold;
+        }
+
+        a:last-child {
+          margin-right: 0;
         }
       `}</style>
     </header>
